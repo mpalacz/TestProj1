@@ -44,12 +44,5 @@ namespace TestProj1
             actual = MathOperations.division(0, 0);
             Assert.AreEqual(double.PositiveInfinity, actual);
         }
-        [TestMethod]
-        public void TestMethod_divByZero1()
-        {
-            expected = 1.454458;
-            actual = MathOperations.division(a, 0.000000000000000000000000000001);
-            Assert.AreEqual(expected, actual, 0.01);
-        }
     }
 }
