@@ -33,8 +33,13 @@ namespace TestProj1
             expected = -0.0172492647058824;
             actual = MathOperations.division(a, b);
             Assert.AreEqual(expected, actual, 0.001);
+        }
+        [TestMethod]
+        public void TestMethod_divByZero()
+        {
             actual = MathOperations.division(a, 0);
             Assert.AreEqual(0, actual);
         }
+
     }
 }
