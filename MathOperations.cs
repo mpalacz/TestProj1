@@ -22,7 +22,10 @@ namespace TestProj1
         }
         public static double division(double a, double b)
         {
-            return a / b;
+            if (b != 0)
+                return a / b;
+            else if (a < 0) return double.NegativeInfinity;
+            return double.PositiveInfinity;
         }
     }
 }
