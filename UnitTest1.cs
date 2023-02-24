@@ -37,8 +37,9 @@ namespace TestProj1
         [TestMethod]
         public void TestMethod_divByZero()
         {
+            expected = double.PositiveInfinity;
             actual = MathOperations.division(a, 0);
-            Assert.AreEqual(0, actual);
+            Assert.AreEqual(expected, actual);
         }
 
     }
